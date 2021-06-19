@@ -1,24 +1,14 @@
 import React from "react";
 
 import Accordion from "./components/Accordion";
-
-const ITEMS = [
-  {
-    title: "What is React?",
-    content: "React is a JavaScript front end library",
-  },
-  {
-    title: "Why use React? ",
-    content: "React is a extremely powerful library",
-  },
-  {
-    title: "How to use React? ",
-    content: "You can use React by creating components",
-  },
-];
+import Search from "./components/Search";
 
 const App = () => {
-  return <Accordion items={ITEMS} />;
+  return (
+    <div className="ui container" style={{ marginTop: 20 }}>
+      <Search />
+    </div>
+  );
 };
 
 export default App;
